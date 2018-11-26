@@ -1,0 +1,15 @@
+
+
+//×Ö·û´®Á¬½Ó·ûÁ·Ï°
+public class TestOperation05 {
+	public static void main(String[] args) {
+		String a = "3";
+		int b = 4;
+		int c = 5;
+		System.out.println(a+b);
+		System.out.println(b+c);
+		System.out.println(b+c+a);
+		System.out.println(b+a+c+a);
+	}
+
+}
