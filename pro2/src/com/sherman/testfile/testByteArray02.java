@@ -57,7 +57,7 @@ public class testByteArray02 {
 	 * @throws IOException 
 	 */
 	public static byte[] getBytesFromFile(String srcPath) throws IOException {
-		//创建文件源
+		//创建文件源.
 		File src = new File(srcPath);
 		//创建字节数组去向
 		byte[] dest = null;

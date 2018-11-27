@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="删除 4 个资源" deleteContents="false" description="删除 4 个资源" element1="/ws_jdk_client" element2="/ws_jdk_server" element3="/ws_socket_client" element4="/ws_socket_server" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1534753588423"/>
+</session>

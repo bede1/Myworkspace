@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Utils.java&apos; to &apos;cn.sherman.paixu.NewsItem.java&apos;&#x0D;&#x0A;－ 原始项目：“innerType”&#x0D;&#x0A;－ 目标元素：“cn.sherman.paixu.NewsItem.java”&#x0D;&#x0A;－ 原始元素：“Utils.java”" description="复制文件" destination="=pro2/src&lt;cn.sherman.paixu{NewsItem.java" element1="Utils.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1539846426569" units="0" version="1.0"/>
+</session>

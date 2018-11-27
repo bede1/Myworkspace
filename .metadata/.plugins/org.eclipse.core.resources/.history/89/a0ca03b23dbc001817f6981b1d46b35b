@@ -1,0 +1,12 @@
+package cn.sherman.collection;
+/**
+ * 定义mylinkedlist节点
+ * @author Auser
+ *
+ */
+public class Node {
+	Object item = null;
+	Node prev;
+	Node next;
+	Node (Node)
+}
