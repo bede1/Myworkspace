@@ -1,0 +1,17 @@
+package com.sherman.testfile;
+
+import java.io.IOException;
+
+/**
+ * ≤‚ ‘ ÷–¥µƒfilecopy¿‡
+ * @author Auser
+ *
+ */
+public class testFilecoy2 {
+	public static void main (String[] args) throws IOException {
+		fileCopy fc = new fileCopy();
+		fc.setInputPath("E:\\testfile\\filecopy\\filecopy.txt");
+		fc.setOutputPath("E:\\testfile\\filecopy\\filecopy2.txt");
+		fc.dofileCopy(fc.inputfile, fc.outputfile);
+	}
+}
