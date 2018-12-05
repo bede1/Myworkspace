@@ -1,0 +1,17 @@
+package com.sherman.testfile;
+
+import java.io.PrintStream;
+
+/**
+ * ≤‚ ‘¥Ú”°¡˜
+ * @author pc
+ *
+ */
+public class testPrintStream01 {
+	public static void main(String[] args) {
+		System.out.println("testprint");
+		PrintStream ps = System.out;
+		ps.println();
+		
+	}
+}
