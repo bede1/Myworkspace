@@ -19,9 +19,9 @@ public class testPrintStream01 {
 		//输出到文件
 		File src = new File("D:\\testio\\testprint.txt");
 		ps = new PrintStream(new BufferedOutputStream(new FileOutputStream(src,true)));  //true在原有文件后继续添加
-		ps.println("\n"+"sherman is learning java.io.");
-		ps.println("this is new line, ");
-		ps.println("go on to print");
+		ps.println("sherman is learning java.io.");
+		ps.print("this is new line, ");
+		ps.print("go on to print");
 		ps.flush();
 		ps.close();
 		
