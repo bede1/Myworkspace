@@ -1,0 +1,15 @@
+package com.sherman.testthread.sync;
+/**
+ * 测试抢票
+ * @author Auser
+ *
+ */
+public class Tickets implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO 自动生成的方法存根
+		
+	}
+	
+}

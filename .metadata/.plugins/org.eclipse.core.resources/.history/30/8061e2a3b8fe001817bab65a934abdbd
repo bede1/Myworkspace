@@ -1,0 +1,5 @@
+package com.sherman.testthread.sync;
+
+public class MyJvm {
+
+}

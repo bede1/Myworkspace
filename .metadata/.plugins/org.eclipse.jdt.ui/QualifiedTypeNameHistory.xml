@@ -31,4 +31,5 @@
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="com.sun.corba.se.impl.orbutil.closure.Future"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Future"/>
+    <fullyQualifiedTypeName name="jdk.jfr.internal.JVM"/>
 </qualifiedTypeNameHistroy>

@@ -6,10 +6,13 @@ package com.sherman.testthread.info;
  */
 public class BaseThread implements Runnable {
 	private boolean flag = true;
+	private short num = 0;
 	@Override
 	public void run() {
 		// TODO 自动生成的方法存根
-		//while()
+		while(flag) {
+			System.out.println(Thread.currentThread().getName()+"----"+num++);
+		}
 		
 	}
 	public boolean isFlag() {
