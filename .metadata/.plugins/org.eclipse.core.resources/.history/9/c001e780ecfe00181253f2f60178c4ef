@@ -42,7 +42,7 @@ class Jvm implements Runnable{
 		
 	}
 	//3.创建一个对外的公共静态方法，用来访问该变量，如果变量没有对象，创建该对象
-	public  static Jvm getInstance() {
+	public synchronized static Jvm getInstance() {
 		if(instance==null) {
 			synchronized(Jvm.class) {
 				if(instance==null) {

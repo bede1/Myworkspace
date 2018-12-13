@@ -10,13 +10,10 @@ package com.sherman.testthread.sync;
 public class TestSync02 {
 	public static void main(String[] args) throws InterruptedException {
 		Thread thd1 = new Thread(Jvm.getInstance(),"张三");
-		Thread.sleep(100);
 		Thread thd2 = new Thread(Jvm.getInstance(),"李四");
-		Thread.sleep(100);
 		Thread thd3 = new Thread(Jvm.getInstance(),"王二");
-		Thread.sleep(100);
 		thd1.start();
-		
+		Thread.sleep(10);
 		thd2.start();
 		
 		thd3.start();	
@@ -42,7 +39,7 @@ class Jvm implements Runnable{
 		
 	}
 	//3.创建一个对外的公共静态方法，用来访问该变量，如果变量没有对象，创建该对象
-	public  static Jvm getInstance() {
+	public static Jvm getInstance() {
 		if(instance==null) {
 			synchronized(Jvm.class) {
 				if(instance==null) {
