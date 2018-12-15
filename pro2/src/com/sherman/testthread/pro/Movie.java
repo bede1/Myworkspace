@@ -34,7 +34,7 @@ public class Movie {
 		//生产完毕
 		this.pic = pic;
 		//通知消费
-		//this.notify();
+		this.notify();
 		//生产者停下
 		this.flag = false;
 	}
@@ -57,7 +57,7 @@ public class Movie {
 		System.out.println("消费了"+pic);
 		//消费完毕
 		//通知生产
-		//this.notify();
+		this.notify();
 		//消费停止
 		this.flag = true;
 		
