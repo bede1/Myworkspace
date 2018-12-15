@@ -1,0 +1,14 @@
+package com.sherman.testthread.pro;
+
+public class Watch implements Runnable {
+	private Movie m;
+	public Watcher(Movie m) {
+		this.m= m;
+	}
+	@Override
+	public void run() {
+		// TODO 自动生成的方法存根
+		
+	}
+	
+}
