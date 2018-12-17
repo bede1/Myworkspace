@@ -10,7 +10,6 @@ public class PlayerAndWatcher {
 		Player p1 = new Player(m);
 		Watcher w1 = new Watcher(m);
 		Thread thd1 = new Thread(p1);
-		
 		Thread thd2 = new Thread(w1);
 		thd1.start();
 		thd2.start();
