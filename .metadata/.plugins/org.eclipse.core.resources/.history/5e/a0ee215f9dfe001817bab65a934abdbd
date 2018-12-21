@@ -1,9 +1,0 @@
-package com.sherman.testthread.sync;
-/**
- * ≤‚ ‘«¿∆±
- * @author Auser
- *
- */
-public class Tickets implements Runnable {
-	
-}
