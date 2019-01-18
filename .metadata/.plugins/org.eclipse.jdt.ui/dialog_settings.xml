@@ -104,7 +104,7 @@
 	<section name="JavaBuildConfigurationBlock">
 		<item value="false" key="expanded2"/>
 		<item value="false" key="expanded1"/>
-		<item value="true" key="expanded0"/>
+		<item value="false" key="expanded0"/>
 	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SynchronizedModifier"/>

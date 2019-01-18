@@ -1,0 +1,43 @@
+package com.sherman.httpserver.socket.demo1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * 初步写一个server，用于接收客户端浏览器请求
+ * @author Auser
+ *
+ */
+public class Server {
+	private ServerSocket ss;
+	public static void main(String[] args) {
+		Server server = new Server();
+		server.start();
+		server.recieve();
+	}
+	
+	private void start() {
+		try {
+			ss = new ServerSocket(8090);
+			//this.recieve();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+	private void recieve() {
+		try {
+			Socket client = ss.accept();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+		String msg = null;
+		BufferedReader br = new BufferedReader(new InputStreamReader(client.));
+	}
+	
+	
+	
+}

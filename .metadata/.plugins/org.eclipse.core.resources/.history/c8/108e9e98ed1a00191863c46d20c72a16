@@ -1,0 +1,67 @@
+package com.sherman.httpserver.socket.demo1;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+/**
+ * 初步写一个server，用于接收客户端浏览器请求
+ * @author Auser
+ *
+ */
+public class Server {
+	private ServerSocket ss;
+	public static void main(String[] args) {
+		while(true) {
+		Server server = new Server();
+		server.start();
+		server.recieve();
+	}
+	}
+	/**
+	 * 启动
+	 */
+	private void start() {
+		try {
+			ss = new ServerSocket(8090);
+//			this.recieve();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+	/**
+	 * 
+	 */
+	private void recieve() {
+		try {
+			Socket client = ss.accept();
+			String msg = null;
+			StringBuilder sb = new StringBuilder();
+			String info = null;
+			BufferedReader br = new BufferedReader(new InputStreamReader(client.getInputStream()));
+			while((msg=br.readLine())!=null) {
+				//接收数据,并去掉空格
+				info = sb.append(msg).append("\r\n").toString().trim();  
+				//sb.toString().trim()
+				
+			}
+			System.out.println(info);
+			
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+		
+	}
+/**
+ * 监听服务器
+ * @throws IOException 
+ */
+	private void stop() throws IOException {
+		ss.close();
+	}
+	
+}
